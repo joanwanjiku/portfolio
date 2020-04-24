@@ -1,4 +1,4 @@
-# Portfolio - Joan Evans
+# Portfolio
 This is a single web page. It includes who I am, What I have done and lastly, What I'd like to achieve
 
 ## Prerequisites
