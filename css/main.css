@@ -35,5 +35,10 @@ body{
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 1%;
 }
+.project ol li a{
+    text-decoration: none;
+    color: rgb(3, 21, 73);
+    font-weight: 900;
+}
 
 
