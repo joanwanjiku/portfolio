@@ -1,0 +1,35 @@
+body{
+    padding: 0;
+    box-sizing: border-box;
+    background: url('/images/paperBg.jpg')
+}
+.bio{
+    margin: 2rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 1%;    
+}
+
+.bio img{    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40vh;
+    width: auto;
+}
+
+.bio h2{
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    text-align: center;
+}
+.project{
+    margin: 2rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 1%;
+
+}
+.project ul{
+    list-style: none;
+
+}
