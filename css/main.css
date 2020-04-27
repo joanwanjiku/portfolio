@@ -1,7 +1,7 @@
 body{
     padding: 0;
     box-sizing: border-box;
-    background: url('./images/paperBg.jpg')
+    background: url('../images/paperBg.jpg')
 }
 .container{
     padding: 20px 100px;
