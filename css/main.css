@@ -6,10 +6,7 @@
 /* font-family: 'Roboto', sans-serif;  headings*/
 
 /* TYPOGRAPHY */
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{    
     font-family: 'Josefin Sans', sans-serif;
     background-color: #e5e5e5;
 }
@@ -29,14 +26,12 @@ h1, h2, h3, h4, h5, h6{
     letter-spacing: .125em;
 }
 
-
 header{
     background: #14213d;
     height: 40vh;
     display: flex;
     flex-direction: row;
 }
-
 section h1{
     text-align: center;
     font-size: 1.5rem;
@@ -53,8 +48,7 @@ section h1::after{
     bottom: -.5rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #14213d;
-    
+    background-color: #14213d;    
 }
 section h1::before{
     width: 5rem;
@@ -137,7 +131,7 @@ nav a:focus{
 
 
 .about{
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
 }
 .potrait-grid{
@@ -248,21 +242,85 @@ nav a:focus{
     }
 }
 
-/* Work Experience */
-/* .work{
-    background: #f0e9d7;
+/* projects */
 
-} */
+.news .article figcaption {
+  position: absolute;
+}
+
+.news .article {
+  position: relative;
+}
+
+
+.news {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.news .article {
+  overflow: hidden;
+  width: 100%;
+  height: 30vh;
+}
+.news .article img {
+  width: 100%;
+  min-height: 100%;
+  transition: 0.2s;
+}
+.news .article figcaption {
+  font-size: 1rem;
+  text-shadow: 0 1px 0 rgba(51,51,51,0.3);
+  color: #fff;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 20px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  background: rgba(6,18,53,0.6);
+  opacity: 0;
+  transform: scale(1.15);
+  transition: 0.2s;
+}
+.news .article figcaption h3 {
+  color: #fca311;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.news .article:hover img,
+.news .article:focus img,
+.news .article:active img {
+  filter: blur(2px);
+  transform: scale(0.97);
+}
+.news .article:hover figcaption,
+.news .article:focus figcaption,
+.news .article:active figcaption {
+  opacity: 1;
+  transform: none;
+}
+.btn-app{
+    padding: .5em;
+    margin: .5em;
+    color: black;
+    background: #fd57bf;
+}
+/* projects */
+
+
 .timeline ul {
     border-left: 4px solid #fd57bf;
     border-radius: .8rem;
     background-color: rgba(0, 0, 0, 0.05);
     margin: 0 auto;
     position: relative;
-    padding: 4rem;
+    padding: 2rem;
     list-style: none;
     text-align: left;
-    width: 80%;
+    width: 100%;
 }
 
 .timeline ul .date {
@@ -299,10 +357,10 @@ nav a:focus{
 
 .timeline ul .date::before {
     content: attr(data-date);
-    left: -19rem;
+    left: -15rem;
     text-align: right;
-    min-width: 12rem;
-    font-size: 1.5rem;
+    min-width: 10rem;
+    font-size: 1.2rem;
 }
 
 .timeline ul .date::after {
@@ -310,16 +368,18 @@ nav a:focus{
     -webkit-box-shadow: 0 0 0 4px #fd57bf;
             box-shadow: 0 0 0 4px #fd57bf;
     border-radius: 100%;
-    left: -5rem;
+    left: -3rem;
     height: 1.5rem;
     width: 1.5rem;
     background-color: #14213d;
 }
-
+.alert{
+    text-align: center;
+    display: none;
+}
 .contact {
     background-color: #14213d;
-    width: 100%;
-    margin: 0 auto;
+    
 }
 
 .contact h1::before,
@@ -343,11 +403,11 @@ nav a:focus{
     border-radius: 100%;
     bottom: -1rem;      ;
 } 
-.contact form {
-    width: 70%;
-    margin: 0 auto;
-}
 
+.contact form{
+    margin-right: 1em;
+    width: 100%;
+}
 .contact form label {
     font-size: 1rem;
     color: #fca311;
@@ -361,11 +421,10 @@ nav a:focus{
     outline-color: #fd57bf;
 }
 
-.contact form input[type='button'] {
-    width: initial;
-    background-color: #fd57bf;
+.contact form input[type='submit'] {
+    background-color: #fca311;
     color: #eee;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border-radius: .8rem;
     cursor: pointer;
     -webkit-transition: background-color 650ms;
@@ -376,7 +435,20 @@ nav a:focus{
     color: #221e3f;
     background-color: #fca311;
 }
+#contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+#contacts h3 {
+    font-size: 1rem;
+    color: #fca311;
+}
+#contacts p {
+    font-size: 1rem;
+    color: white;
+}
 .copyright {
     width: 100%;
     text-align: center;

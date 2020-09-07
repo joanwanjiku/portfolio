@@ -19,7 +19,7 @@
                         <li><a href="#" class="current">Home</a></li>
                         <li><a href="#">About me</a></li>
                         <li><a href="#">Projects</a></li>
-                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Experience</a></li>
                         <li><a href="#">Contacts</a></li>
                     </ul>
                 </nav>
@@ -41,7 +41,7 @@
                         
                     </div>
                     <div class="body-potrait">
-                        <p> <strong>About, ipsum dolor sit</strong>  amet consectetur adipisicing elit. Ab earum praesentium temporibus unde magni at quibusdam beatae possimus consectetur sint, 
+                        <p> <strong>I am a full-stack web developer</strong>  amet consectetur adipisicing elit. Ab earum praesentium temporibus unde magni at quibusdam beatae possimus consectetur sint, 
                             impedit magnam eaque dicta maiores atque mollitia sunt corporis blanditiis alias aut delectus optio! 
                             Eaque hic consequatur omnis ut sed dolorem obcaecati, quia repellat esse quam aliquid provident veritatis? Ullam!</p>
                     </div>                
@@ -49,8 +49,54 @@
     
             </div>
             <section class="project">
-                <h1>Projects</h1>
+                <h1>Projects</h1>                
+                  <div class="news row">              
+                    <figure class="article col-sm-4">            
+                        <img src="./images/nr.png" />            
+                        <figcaption>            
+                            <h3>NewsRoom</h3>            
+                            <p>            
+                              This particular web app, technologies used include <strong>Flask, Python, consumed NEWS API</strong>
+                            </p>   
+                            <a href="https://news-room-joan.herokuapp.com/" class="btn btn-app">Open app</a>
+         
+                        </figcaption>            
+                    </figure>
+            
+                    <figure class="article col-sm-4">            
+                      <img src="./images/pitch.png" />            
+                      <figcaption>            
+                          <h3>PitchDesk</h3>            
+                          <p> 
+                            PitchDesk is a web platform where users can view, like, dislike and comment on pitches posted by other users.Users can post some
+                            of their favourites pitches upon login.      
+                            This particular web app, technologies used include <strong>Flask, Python, HTML, CSS and JavaScript</strong>
+                          </p>   
+                          <a href="https://pitchdesk.herokuapp.com/" class="btn btn-app">Open app</a>           
+                      </figcaption>            
+                  </figure>
+                  <figure class="article col-sm-4">            
+                    <img src="./images/insta.png" />            
+                    <figcaption>            
+                        <h3>InstaClone</h3>            
+                        <p> 
+                          InstaClone is an instagram clone. functionalities include 
+                            <ul style="margin:0;">
+                              <li>Like/Dislike</li>
+                              <li>Commenting</li>
+                              <li>Following other users</li>
+                              <li>Creating/Updating and deleting Posts</li>
+                            </ul>  
+                          Technologies used include <strong>Python, Django, HTML, CSS and JavaScript</strong>         
+                        </p>  
+                        <a href="https://instaclone-joan.herokuapp.com/" class="btn btn-app">Open app</a>          
+                    </figcaption>            
+                </figure>
+            
+                </div>
+  
             </section>
+
             <section class="work">
                 <div class="container">
                     <div class="education-heading">
@@ -62,9 +108,7 @@
                         
                         <li class="date" data-date= "2018 - 2018">
                           <h2>KeRRA - Attachment</h2>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Eaque temporibus iusto doloribus totam, nihil neque id 
-                            magnam incidunt accusantium magni, quos maiores, harum facere nostrum labore natus velit optio eum!
+                          <p>Held an Attache position for 3Months
                           </p>
                         </li>
                         <li class="date" data-date= "2017 - 2017">
@@ -80,19 +124,35 @@
             </section>
             <section class="contact" id="contact">
                 <div class="container">
-                  <div class="contact-heading">
-                    <h1>Contact</h1>
-                    <h6 style="text-align: center;">Lets work together</h6>
-                  </div>
-                  <form action="">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Enter your name..." required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="name" placeholder="Enter your email..." required>
-                    <label for="name">Message:</label>
-                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
-                    <input type="button" value="Submit">
-                  </form>
+                  <div class="heading">
+                    <div class="contact-heading">
+                      <h1>Contact</h1>
+                      <h6 style="text-align: center;">Lets work together</h6>
+                    </div>
+                    <div class="alert alert-success">
+                      Message sent
+                    </div>
+                  </div>                  
+                  <div class="contacts" id="contacts">
+                    
+                    
+                    <form action="" id="contactForm">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" placeholder="Enter your name..." required >
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" placeholder="Enter your email..." required >
+                      <label for="name">Message:</label>
+                      <textarea name="message" id="message" cols="30" rows="10" required ></textarea>
+                      <input type="submit" value="Send">
+                    </form>
+                    <div class="reach">
+                      <h3>Contact Details</h3>
+                       <p>email:- joanevans18@gmail.com</p> 
+                      <h3>Social Details</h3>
+                        <p>Twitter</p>
+                        <p>Linkedin</p>
+                    </div>
+                  </div>                  
                 </div>
             </section>
         </main>
@@ -106,6 +166,11 @@
             <p>&copy; 2020 Joan Wanjiku</p>
         
         </footer>
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+        <script src="/js/main.js"></script>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>   
