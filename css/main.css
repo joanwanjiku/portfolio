@@ -72,21 +72,15 @@ section h1::after{
     padding: 1em;
     font-size: 1.2rem;
 }
-.header-text button{
-    margin: 1em;
-    background: #fca311;
-    padding: 1em;
-    border: 1px solid #14213d;
-    color: #14213d;
-    padding: 1rem 2rem;
-    border-radius: .8rem;
-    font-size: 1.1rem;
-
+.header-text .input-group{
+    width: 100% !important;
+    margin: 0 auto;
+    font-size: 1.5rem;
 }
-.header-text button:hover{
+.header-text .input-group-text:hover{
     cursor: pointer;
-    background: #fca211b1;
 }
+
 .cont{
     width: 90%;
     margin: 0 auto;
@@ -131,7 +125,7 @@ nav a:focus{
 
 
 .about{
-    /* width: 80%; */
+    height:40vh;
     margin: 0 auto;
 }
 .potrait-grid{
@@ -175,6 +169,8 @@ nav a:focus{
 .body-potrait{
     grid-area:body-potrait;
     line-height: 2;
+    font-size: 1.2rem;
+    margin: auto 0;
 }
 @media (min-width: 768px){
     .potrait-grid{        
@@ -243,7 +239,12 @@ nav a:focus{
 }
 
 /* projects */
+.project{
+    background: rgb(216, 214, 214);
+    padding: 1em;
+    height:40vh
 
+}
 .news .article figcaption {
   position: absolute;
 }
@@ -308,8 +309,21 @@ nav a:focus{
     color: black;
     background: #fd57bf;
 }
-/* projects */
 
+@media (min-width: 768px){
+    
+   
+}
+@media (min-width: 992px){
+    
+}
+/* projects */
+.work{
+    padding: 1em 0;
+    width: 100%;
+    height:40vh
+
+}
 
 .timeline ul {
     border-left: 4px solid #fd57bf;
@@ -320,7 +334,6 @@ nav a:focus{
     padding: 2rem;
     list-style: none;
     text-align: left;
-    width: 100%;
 }
 
 .timeline ul .date {
@@ -381,6 +394,62 @@ nav a:focus{
     background-color: #14213d;
     
 }
+.content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contacts form{
+    width: 60%;
+    margin: 0 auto;
+}
+.contacts form label {
+    font-size: 1rem;
+    color: #fca311;
+}
+
+.contacts form input, .contact form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: none;
+    outline-color: #fd57bf;
+}
+
+.contacts form input[type='submit'] {
+    background-color: #fca311;
+    color: #eee;
+    padding: 1rem 1rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    -webkit-transition: background-color 650ms;
+    transition: background-color 650ms;
+}
+
+.contacts form input[type='button'] {
+    color: #221e3f;
+    background-color: #fca311;
+}
+.reach{
+    align-self: flex-start;
+    padding: 1em;
+}
+#contacts h3 {
+    font-size: 1rem;
+    color: #fca311;
+}
+#contacts p {
+    font-size: 1rem;
+    color: white;
+    margin-left: 1em;
+}
 
 .contact h1::before,
 .contact h1::after{
@@ -404,51 +473,8 @@ nav a:focus{
     bottom: -1rem;      ;
 } 
 
-.contact form{
-    margin-right: 1em;
-    width: 100%;
-}
-.contact form label {
-    font-size: 1rem;
-    color: #fca311;
-}
 
-.contact form input, .contact form textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 5px;
-    border: none;
-    outline-color: #fd57bf;
-}
 
-.contact form input[type='submit'] {
-    background-color: #fca311;
-    color: #eee;
-    padding: 1rem 1rem;
-    border-radius: .8rem;
-    cursor: pointer;
-    -webkit-transition: background-color 650ms;
-    transition: background-color 650ms;
-}
-
-.contact form input[type='button'] {
-    color: #221e3f;
-    background-color: #fca311;
-}
-#contacts{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#contacts h3 {
-    font-size: 1rem;
-    color: #fca311;
-}
-#contacts p {
-    font-size: 1rem;
-    color: white;
-}
 .copyright {
     width: 100%;
     text-align: center;
@@ -476,9 +502,22 @@ nav a:focus{
     color: #16162dc4;
     font-size: 2rem;
     margin: auto;
+    cursor: pointer;
 }
 
 .copyright p {
     color: white;
     font-size: .875rem;
+}
+@keyframes pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(253,87,191,0.99);
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(253,87,191,0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(253,87,191,0);
+
+    }
 }
