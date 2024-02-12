@@ -19,5 +19,5 @@ To run the application:
 Joan Wanjiku
 
 ### License
-Copyright &copy; 2020, Joan Evans
+Copyright &copy; 2024, Joan Evans
 
